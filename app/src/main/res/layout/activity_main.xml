@@ -1,94 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:gravity="center"
-    tools:context="com.example.kotlin1.MainActivity"><TableRow
+    tools:context="com.example.kotlin1.MainActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrol"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
+        android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button1"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
+        <HorizontalScrollView
+            android:id="@+id/scrolh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
 
-
-
-    </TableRow>
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/button4"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-        <Button
-            android:id="@+id/button5"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-        <Button
-            android:id="@+id/button6"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-
-
-
-    </TableRow>
-
-
-
-    <TableRow
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center">
-
-        <Button
-            android:id="@+id/button7"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-        <Button
-            android:id="@+id/button8"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-        <Button
-            android:id="@+id/button9"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:onClick="onClic" />
-
-
-
-
-    </TableRow>
-
-
-</TableLayout>
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+</RelativeLayout>
